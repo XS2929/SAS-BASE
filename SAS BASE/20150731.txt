@@ -1,0 +1,69 @@
+一周前报的考试，0基础，刷70题和机经两天，95%过的。现在把还记得的题目分享给大家，希望能帮助到大家。
+70 题：
+
+Q1 两个都选gender
+Q3
+Q5
+Q6
+Q7 变形，但还是选WINXP
+Q10
+Q11
+Q13 经典变形 选Diff1 那个
+Q16
+Q17
+Q18
+Q19
+Q20
+Q21 只drop了两个，所以选3
+Q22
+Q24
+Q27 变形，是by day descending Month Day
+Q28
+Q30
+Q31
+Q32
+Q33
+Q34
+Q35 变形 output WORK.OTHER 选2 2 1 那个
+Q36 变形 选ddmmyy10.
+Q37
+Q40
+Q42 变形 填空题 我写的5
+Q46 变形 不影响结果 选1.6
+Q51
+Q52 变形 多了一个观测值在第一个数据集，选3
+Q55 变形 X=“15JAN1960”D； X=14
+Q56 选项变了，但答案没变
+Q57 变形，选DAY函数
+Q58
+Q61
+Q65
+Q66 有个output在内循环里，所以选5
+Q67 变形 X=3
+Q69
+
+123题
+
+Q7
+Q11变形 选eof=1
+Q50 变成填空了
+Q94
+Q104
+Q110 变形 选33
+
+JJ
+
+1. 输出PDF file  ods pdf file =... ;    ods pdf close;
+2.输出PDF file  ods csv file =... ;    ods csv close;
+3.split(*)
+4.日期变character的 答案是PUT(date, worddate20.)
+5.sort by 问题 只需要知道 descending 是把之后紧接那个一个variable降序分类
+6.类似Yearcutoff = 1970 然后答案是2060
+7.这一道是讲total=total+salary 然后输出里有一列total 应该全为missing value
+8. 有两个不同的数据集 有一个除了名字不一样外 其他的几个都一样 选variable数量为4，如果我记得没错的话
+9.还有一个是出现data error 会有什么事情发生，我记得是会continue execution 然后写什么进log
+10。还有一个是一开始描述了某个变量的长度，然后data setp 中有 length 15,format $20. 什么的 问你某一个变量的length,我选的15 不知道对错。
+11.还有一个是1. 2012 人口那题，2%，output 在内循环里，我选的是2012 to 2021
+12.选择有几个variable的命名正确，其中有两个是数字开头，错误，所以答案是2
+13.95题中的第93题（答案是QTR1=sum(of month{*}) 这题我错了
+14.答案选项是类似 a semi-comma missing on the dataline statement.

@@ -1,0 +1,87 @@
+刚刚考完回来，在中关村某考点考的，就俩机子，另一个mm考的别的。
+0基础，断断续续认真学习了三、四个月，95%过的。
+题库没有变，题目和坛子上大家分享的差不多，错的题目估计是机经上，大家也拿不准答案的某题，自己也不知道错啥了。按百分率看，应该错了2,3道题。
+这是我复习用的资料，包括50+70+95+123+15年机经汇总，下载后好好学习必过
+
+
+有三道填空，其中2个是填数字，一个填语句就是By IDNumber Expenses
+按题库说：
+70 题：
+Q3
+Q4
+Q5
+Q9 50.5
+Q10
+Q11
+Q13 经典变形 选Diff1 那个
+Q15 没变形，就是原题
+Q16
+Q17
+Q20 告诉大家一个我总结的诀窍，DAD步中，set前有format,长度就可以改过来了，在set后就维持不变
+Q21 GT50
+Q24
+Q28
+Q30
+Q31
+Q32
+Q33
+Q34
+Q35 变形 output WORK.OTHER 选2 2 1 那个
+Q36 变形 选ddmmyy10.
+Q37
+Q40
+Q42 变形 填空题 我写的5
+Q46 变形 不影响结果 选1.6
+Q52 变形 多了一个观测值在第一个数据集，选3
+Q53
+Q56
+Q57 变形，选DAY函数，这次是日期了
+Q58 遇到的第一道题
+Q60
+Q61
+Q63
+Q65
+Q66 改成填空了，有个output在循环里，最好自己跑一个试试
+Q67 变形 X=3
+Q69
+
+123题
+
+Q7
+Q11变形 选eof=1
+Q50 变成填空了
+Q94
+Q104
+Q110 经典的变形 选33
+
+其他的机经，和大家说得差不多，我也都遇到了
+
+1. 输出PDF file  ods csv file =... ;    ods csv close;
+2.split(*)
+3.日期变character的 答案是PUT(date, worddate20.)
+4.类似Yearcutoff = 1920 然后答案是-99
+5. total=total+salary 然后输出里有一列total 应该全为missing value，因为total未赋初始值
+6.还有一个是2%那题，选2012 to 2021 ，output 在内循环里
+7.选择有几个variable的命名正确，其中有两个是数字开头，错误，所以答案是2
+8.95题中的第93题（答案是QTR1=sum(of month{*})
+9.答案选项是类似 a semi-comma missing on the dataline statement.
+10. ods html file=“ xx”
+proc print data=xx
+proc freq xx
+run因为一个run 我选了freq的，没选both。这个不知道对错
+11．这个也考了，借用一下：
+INPUT LAname ....（注意没有5个变量的）
+N1，N2，N3，N4, N5
+A1，A2，A3
+B1,  B2，B3，B4，
+C1，C2，C3，C4，C5的格式
+问_N_=1时的_error_如何？
+A 1 2 3 4
+B 1 0 0 1
+C 2 0 0 2
+D OTHERS
+我选了B
+12．读cvs文件，选这个：
+ODS CSVALL FILE='filename.csv';
+      … SAS code …
+ODS CSVALL CLOSE;

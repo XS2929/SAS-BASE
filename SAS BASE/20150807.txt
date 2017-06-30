@@ -1,0 +1,48 @@
+一共62道题，60道选择，2道填空。大部分来自70题及其变形，95题，123题和机经，只有两道没见过的新题。复习时间为一周，复习资料为50+70+95+123+机经。免费附上资料，造福广大考友。考到的题目：
+70题
+Q1 有改动，选gender,gender.
+Q3 Q5 Q6 Q7 Q10 Q11
+Q13 改成array Diff{3}  Diff1-Diff3,选Diff1,Diff2 and Diff3.
+Q16 Q17
+Q18答案多了个only。 _ERROR_ can only be used in expressions in the DATA step.
+Q19 题目改成where Num contains (1), 答案不变。
+Q20
+Q21 改成if Sales GT 50,选1
+Q22 Q24 Q27 Q28 Q30 Q31 Q32 Q33 Q34
+Q35 题目改成else output work.other; 选2,2,1那个答案。
+Q36 题目改了，日期在前面，选ddmmyy10.
+Q37
+Q42 填空，题目改成Text=’US,Austrilia,Denmark’; Pos=find(Text,’US’,’i’,5); 填5
+Q43 题目改了，要求把shipped date转化成character variable,选put (XXX,workdate20.)
+Q46 题目改了，多了个变量Revenue 2007,其值为缺失值，答案不变。
+Q51 题目有改动，答案里多了个名词metadata.
+Q52 题目有改动，Work.emp_name这个data set 多加了一行数值，答案选3
+Q53 Q56
+Q57 题目改成求一个月当中的第几天，选day(BeginDate).
+Q58
+Q60 题目改了，data work.revenue这行只drop了两个变量。选3
+Q61
+Q62 题目改成生成pdf文件 ods pdf file=’ xxxx.pdf‘; ods pdf close;
+Q63 Q65
+Q66 题目改成 do Year=1 to 5; do Month=1 to 12; X+1;end;output;end;选5.
+Q67 题目改成if X<10 then X=3,选3.
+Q69
+95题：
+Q71 变形题，考变量命名规则，给出4个名字，2对2错。
+Q93
+123题：
+Q7 Q11 Q27
+Q50 填空 by IDNumber Expenses;
+Q54 Q64 Q94
+Q110 Ruth 读下一行，注意数据变了
+Q118
+机经：
+1.计算人口增长，每年增2%，结果要输出每年年份和相应的人口数量
+答案大概是
+do year=2012 to 2021;
+population*1.02;
+output;
+end;
+2. yearcutoff 答案选2060
+3. split= ‘*’
+4. dataline那行缺失分号
