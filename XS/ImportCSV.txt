@@ -1,0 +1,4 @@
+data test;
+	infile '/folders/myfolders/sasuser.v94/TEST.csv' dlm=',' firstobs=2;
+	input address $;
+run;

@@ -1,0 +1,7 @@
+data output;
+set work.import;
+where origin='Asia' and type='SUV';
+run;
+
+proc print data=output;
+run;
