@@ -39,9 +39,9 @@ Variables (Columns)
 
 关于 Data Type
 
-character, 可以包含任意值
+character, 可以包含任意值, a blank represents a missing value
 
-numeric， 1-9 . - + E 意味着支持科学计数法
+numeric， 1-9 . - + E 意味着支持科学计数法, a period represents a missing value
 
 一般都有 length
 
@@ -53,8 +53,13 @@ can continue with any combination of numbers, letters and underscores
 
 
 
+Quiz notes: 
 
+When encounters a DATA, PROC or RUN statement, SAS stops reading and executes the previous step in the program.
 
+The default length for numeric variable is 8, 8 bytes. 
+
+To reference a temporary SAS data set:    Work.name name
 
 
 
