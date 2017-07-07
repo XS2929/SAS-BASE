@@ -10,8 +10,11 @@ PROC CONTENTS DATA = SASHELP.CARS;
 RUN;
 --------------------------------------
 
+如果用listing, 可以控制输出，显示line size, page size, page numbers, data and time
+
 listing frequency by one of the column. 
 
+FREQ
 
 option date;
 proc freq data=sashelp.cars;
@@ -21,5 +24,39 @@ run;
 
 -------------------------------------------
 
-p65
+用firstobs obs 定义要显示的行（observation）
+
+
+options firstobs=8 obs=26;
+proc print data = sashelp.cars;
+run;
+
+
+-------------------------------------------
+
+显示数据集信息， 两者基本一样
+
+proc datasets;
+contents data = sashelp.cars;
+run;
+
+
+proc contents data = sashelp.cars;
+run;
+ ---------------------------------------
+
+ options data nodate number nonumber pageno=value pagesize=value(the value includes the lines used by the title, data and so on)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
