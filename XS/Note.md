@@ -55,7 +55,27 @@ RUN;
 
 ---------------------------------------------------------------------
 
+用LABEL 
 
+options LABEL;
+data work.temp;
+input ID $ name $ salary department $;
+comm = salary*0.25;
+LABEL ID = 'employee id' 
+	  comm = 'commisions';
+DATALINES;
+1 A 4590 IT
+2 B 23432 HR
+3 C 23    OP
+4 D 5000   FI
+;
+run;
+proc print data = work.temp;
+run;
+
+proc contents data = work.temp;
+run;
+----------------------------------------------------------------------
 
 
 
