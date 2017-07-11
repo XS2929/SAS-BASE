@@ -77,8 +77,10 @@ proc contents data = work.temp;
 run;
 -----------------------------------------------------------
 注释行
-单行
-多行等
+
+单行注释
+多行注释
+messge类型注释
 
 /*This is a mutiple
 line
@@ -91,6 +93,35 @@ commnet*/
 *This is a two-line comment
 *weird syntax;
 -----------------------------------------------------------
+
+Date 的不同种类
+
+DATE9.
+02APR2001
+
+MONYY.
+JAN49
+
+--------------------------------------------------------
+
+Tasks and Utilities -> Statistics -> Summary Statustics
+
+选定column, 就可以得到一个统计摘要
+
+Variable  Label  Mean  Std Dev  Minimum  Maximum  N(记录数)
+
+--------   ----   ---   -----   -----     -----   -
+
+
+
+
+
+
+
+
+
+
+
 
 
 
