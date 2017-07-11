@@ -102,6 +102,12 @@ DATE9.
 MONYY.
 JAN49
 
+mmddyy10.
+01/01/2001
+
+官网有好多种， google sas data format
+
+
 --------------------------------------------------------
 
 Tasks and Utilities -> Statistics -> Summary Statustics
@@ -114,9 +120,72 @@ Variable  Label  Mean  Std Dev  Minimum  Maximum  N(记录数)
 
 
 
+--------------------------------------------------------
+
+data string_example;
+
+LENGTH string1 $ 13 string2 $ 5 string4 $ 22;
+string1 = 'hello';
+string2 = 'world';
+string3 = string1 || string2;
+substring1 = substrn(string1,2,2);
+substring3 = substrn(string3,5);
+substring4 = substrn(substring3,1,10);
+
+string4 = 'hello fucking world  ';
+string4_c = lengthc(string4);
+
+string5_c = lengthc(trim(string4));
 
 
+run;
 
+proc print data = string_example noobs;
+run;
+
+
+/*在SAS里string的index值没有0，从1开始计
+noobs 很好用， 不会显示observation number
+|| 同python里set的相加， 而且保留前一个string后面的所有blank space
+substrn 有三个输入值， 第一个是要做截取处理的string, 第二个是起始位，第三个是要取几个
+TRIMN 去掉一个string末尾的空格
+*/
+
+--------------------------------------------------
+
+/*关于数组 数组 array
+ 输入datalines时候
+ 分号一定要在新一行
+ OF 与 MEAN, MAX, MIN, SUM 等一起用很方便 
+ 初次在SAS里面用if else，和sql一样蠢
+ 
+ */
+DATA ABOUT_ARRAY;
+INPUT a1 $ a2 $ a3 $ a4 $ a5 $;
+ARRAY AGE[10] (1 2 3 4 5 6 7 8 9 10);
+age_mean = MEAN(OF AGE(*));
+age_min = MIN(OF AGE(*));
+age_max = MAX(OF AGE(*));
+age_sum = SUM(OF AGE(*));
+*ARRAY STR(0:4) $ a1-a5 Same;
+ARRAY STR(*) $ a1-a5;
+*ARRAY STR(5) $ a1-a5 Same;
+mix = STR[1]||' '|| STR[4];
+IF 'mo' in STR THEN MOO ='TRUE'; ELSE MOO = 'FALSE';
+DATALINES;
+ij ao mo gmm rt
+sa wew rr y dv
+we er tt qw rr
+sf ee 12 55
+;
+
+
+RUN;
+
+PROC PRINT DATA = about_array;
+RUN;
+
+--------------------------------------------------
 
 
 
